@@ -17,7 +17,7 @@ const connection = mySQL.createConnection({
 app.use(express.json(), cors());
 // Endpoit of Home Page
 app.get("/", (request, response) => {
-  return response.redirect("/users");
+  return response.json({message:"Welcome!"});
 });
 // ====================================================>
 // =============== User Query =========================>
